@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novedades del Mes</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Novedades del Mes</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/novedades">Novedades</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="fecha-novedades">🗓 Cargando fecha...</h2>
+      <article>
+        <h3>🥑 Superalimentos que están marcando tendencia</h3>
+        <p>La quinoa, la cúrcuma y el kéfir están revolucionando la salud digestiva.</p>
+      </article>
+      <article>
+        <h3>🧠 IA y salud mental</h3>
+        <p>Aplicaciones de meditación personalizadas con inteligencia artificial.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog de Salud</p>
+  </footer>
+
+  <script>
+    const meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+    const f = new Date();
+    document.getElementById("fecha-novedades").textContent = "🗓 " + meses[f.getMonth()] + " " + f.getFullYear();
+  </script>
+</body>
+</html>
